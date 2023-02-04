@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <main>
+        <a href="index.html"><img src="imagenes/Logo.png" alt="Logo a" class="logo"></a>
+        <section class="principal">
+            <textarea name="textoingresado" cols="30" rows="10" placeholder="Ingrese el texto aqui"
+                id="textoEncriptar"></textarea>
+            <div class="textoExplicativo">
+                <img src="imagenes/exclamacion.png" alt="!" class="signoExclamacion">
+                <p>Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="botones">
+                <button class="encriptar" onclick="myFunction(),encriptar()">Encriptar</button>
+                <button class="desencriptar" onclick="myFunction(),desencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="rectangulo">
+            <div class="caja">
+                <div class="caja1" id="caja1">
+                    <img src="imagenes/munheco.png" alt="Muñeco" class="munheco">
+                    <div>
+                        <p>Ningún mensaje fue encontrado</p>
+                        <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                    </div>
+                </div>
+                <div class="caja2" id="caja2">
+                    <textarea readonly name="textoencriptado" cols="30" rows="10" id="mensajeEncriptado"></textarea>
+                    <input type="button" Value="Copiar" class="copiar" onclick="copiar()">
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

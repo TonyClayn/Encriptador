@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #E5E5E5;
+    font-family: 'Inter', sans-serif;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    left: 3%;
+    top: 40px;
+}
+
+.principal textarea{
+    position: absolute;
+    width: 50%;
+    height: 60%;
+    left: 13%;
+    top: 168px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
+    border: 0;
+    padding: 0;
+    background: transparent;
+    resize: none;
+    outline: none;
+    padding: 0 25px 0 0;
+    overflow: hidden;
+}
+
+.principal textarea::placeholder{
+    color: #0A3871;
+}
+
+.textoExplicativo{
+    position: absolute;
+    width: 229px;
+    height: 18px;
+    left: 13%;
+    top: 80%;
+}
+
+.signoExclamacion{
+    float: left;
+    margin: 0 8px 0 0 ;
+    width: 16px;
+    height: 16px;
+}
+
+.textoExplicativo p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #495057;
+    opacity: 0.8;
+}
+
+.botones{
+    position: absolute;
+    width: 50%;
+    height: 67px;
+    left: 13%;
+    top: 85%;
+}
+
+.encriptar{
+    padding: 24px;
+    gap: 8px;
+    width: 45%;
+    height: 67px;
+    background: #0A3871;
+    border-radius: 24px;
+    border: none;
+    cursor: pointer;
+    margin: 0 5% 0 0;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.desencriptar{
+    box-sizing: border-box;
+    padding: 24px;
+    gap: 8px;
+    width: 45%;
+    height: 67px;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    cursor: pointer;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #0A3871;
+    font-weight: bold;
+}
+
+.rectangulo{
+    display: flex;
+    justify-content: right;
+}
+
+.caja{
+    width: 400px;
+    height: 90vh;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    margin: 40px 40px 0 40px;
+}
+
+.munheco{
+    position: relative;
+    width: 336px;
+    height: 304px;
+    left: 32px;
+    top: 243px;
+}
+
+.caja1 div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    position: relative;
+    width: 336px;
+    height: 122px;
+    left: 32px;
+    top: 300px;
+    background: #FFFFFF;
+}
+
+.caja1 div p:nth-child(1){
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;
+}
+
+.caja1 div p:nth-child(2){
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+}
+
+.caja2{
+    display: none;
+}
+
+.caja2 textarea{
+    position: relative;
+    width: 336px;
+    height: 70%;
+    left: 8%;
+    top: 5%;
+
+    color: #0A3871;
+    border: 0;
+    padding: 0;
+    background: transparent;
+    resize: none;
+    outline: none;
+    overflow: hidden;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+}
+
+.copiar{
+    padding: 24px;
+    gap: 8px;
+    position: relative;
+    width: 336px;
+    height: 67px;
+    left: 8%;
+    top: 19.5%;
+
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    cursor: pointer;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #0A3871;
+    font-weight: bold;
+}
+
+@media screen and (max-width:1150px){
+    .logo{
+        left: 0;
+    }
+    .principal{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+        gap: 32px;
+        width: 90%;
+    }
+    .principal textarea{
+        left: 5%;
+        width: 90%;
+        padding: 0;
+    }
+    .textoExplicativo{
+        left: 5%;
+    }
+    .botones{
+        left: 5%;
+        width: 90%;
+    }
+    .rectangulo{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+        gap: 32px;
+        position: absolute;
+        width: 90%;
+        height: 133px;
+        left: 5%;
+        top: 95vh;
+        margin: 0 0 20px 0;
+    }
+    .caja{
+        margin: 0;
+        width: 100%;
+        padding: 3em 0;
+    }
+    .munheco{
+        display: none;
+    }
+    .caja1 div{
+        width: 90%;
+        align-items: center;
+        height: auto;
+        top: auto;
+        left: 5%;
+    }
+    .caja2 textarea{
+        width: 90%;
+        left: 5%;
+    }
+    .copiar{
+        width: 90%;
+        left: 5%;
+    }
+}
+@media screen and (max-width:480px){
+    main{
+        height: 1000px;
+    }
+    .encriptar, .desencriptar{
+        position: relative;
+        margin: 0 0 20px 0;
+        width: 100%;
+    }
+
+    .rectangulo{
+        top: 105vh;
+        margin: 40px 0;
+    }
+}
